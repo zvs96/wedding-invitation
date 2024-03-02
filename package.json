@@ -1,10 +1,10 @@
 {
-  "name": "invitation",
+  "name": "wedding-invitation",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --base-href /wedding-invitation/",
+    "build": "ng build --configuration production --base-href /wedding-invitation/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:invitation": "node dist/invitation/server/server.mjs"
@@ -33,6 +33,7 @@
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
+    "angular-cli-ghpages": "^2.0.0-beta.2",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
