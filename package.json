@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:invitation": "node dist/invitation/server/server.mjs"
+    "serve:ssr:invitation": "node dist/invitation/server/server.mjs",
+    "deploy": "ng deploy --base-href /wedding-invitation/"
   },
   "private": true,
   "dependencies": {
