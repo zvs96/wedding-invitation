@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --output-path docs --base-href /wedding-invitation/",
+    "build": "ng build --base-href /wedding-invitation/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:invitation": "node dist/invitation/server/server.mjs"
