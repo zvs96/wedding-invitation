@@ -1,0 +1,38 @@
+<div class="container-fluid">
+<!--  <nav>-->
+<!--    <ul>-->
+<!--      <li *ngFor="let item of menuItems">-->
+<!--        <a href="{{ item.href }}">{{ item.title }}</a>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </nav>-->
+
+  <section id="countdown" *ngIf="countdown$ && (countdown$ | async) as countdown">
+    <div class="content">
+      <h1>ՀԱՐՍԱՆԵԿԱՆ ՀՐԱՎԻՐԱՏՈՄՍ</h1>
+      <h4>Հարսանիքին մնացել է</h4>
+
+      <div class="timer">
+        <div class="time">
+          <b>{{ countdown.day }}</b>
+          <span>Օր</span>
+        </div>
+
+        <div class="time">
+          <b>{{ countdown.hours }}</b>
+          <span>Ժամ</span>
+        </div>
+
+        <div class="time">
+          <b>{{ countdown.minutes }}</b>
+          <span>Րոպե</span>
+        </div>
+
+        <div class="time">
+          <b>{{ countdown.seconds }}</b>
+          <span>Վարկյան</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
