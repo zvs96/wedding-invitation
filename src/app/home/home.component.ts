@@ -48,11 +48,13 @@ export class HomeComponent implements OnInit {
       const audio: HTMLAudioElement = this.renderer.createElement('audio');
       this.renderer.setAttribute(audio, 'src', 'assets/sound/bg.mp3');
       this.renderer.appendChild(this.elRef.nativeElement, audio);
-      audio.play().catch(() => {
-        this.renderer.listen(this.elRef.nativeElement, 'focus', () => {
-          audio.play()
-        })
-      });
+      setTimeout(() => {
+        audio.play().catch(() => {
+          this.renderer.listen(this.elRef.nativeElement, 'focus', () => {
+            audio.play()
+          })
+        });
+      })
     }
   }
 }
